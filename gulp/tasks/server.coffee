@@ -13,9 +13,9 @@ gulp.task 'server', ->
   server.use morgan 'dev'
   server.use express.static config.dist.root
 
-  server.get '/', (req, res)->
+  server.use (req, res)->
     res.sendFile 'index.html',
-      root: 'build'
+      root: config.dist.root
 
 
   s = http.createServer server

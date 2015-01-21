@@ -1,4 +1,4 @@
-controllersModule = require './_index'
+controllersModule = require './index'
 
 
 ExampleCtrl = ->

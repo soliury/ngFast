@@ -1,4 +1,4 @@
-directivesModule = require './_index'
+directivesModule = require './index'
 
 exampleDirective = ->
   directive =
