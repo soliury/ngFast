@@ -1,4 +1,4 @@
-servicesModule = require './_index'
+servicesModule = require './index'
 
 
 ExampleService = ($q, $http)->

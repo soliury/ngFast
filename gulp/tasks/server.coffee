@@ -15,7 +15,7 @@ gulp.task 'server', ->
 
   server.get '/', (req, res)->
     res.sendFile 'index.html',
-      root: 'build'
+      root: config.dist.root
 
 
   s = http.createServer server
